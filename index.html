@@ -7,8 +7,9 @@
     <title>WEB TEST (Проверка страницы)</title>
 </head>
 <body>
-    <h1> Проверка базовых тегов </h1>
-    Пункты
+    <h1> Проверка тегов </h1>
+
+    <h2>Изменение шрифта</h2>
     <ul>
         <li><b>Жирный</b>, <strong>Жирный</strong> </li>
         <li><i>Курсив</i>, <em>Курсив</em>, <cite>Курсив</cite>, <dfn>Курсив</dfn> </li>
@@ -16,18 +17,25 @@
         <li><s>Зачеркнутый</s>, <del>Удаленный текст</del></li>
         <li><mark>Помеченный</mark></li>
         <li><small>Маленький текст</small></li>
-        <li><code>sudo apt install cmatrix</code>, <kbd>Win</kbd> + <kbd>E</kbd></li>
+        <li><code>sudo apt install cmatrix</code>, <samp>File not found</samp>, <kbd>Win</kbd> + <kbd>E</kbd></li>
         <li><q>Цитата в кавычках</q></li>
+        <li><sup>Сверху</sup>Всередине<sub>Снизу</sub></li>
+        <li><var>e=mc</var><sup><var>2</var></sup></li>
+        <li><var>e=mc<sup>2</sup></var></li>
     </ul>
 
-    <h1>Проверка символов</h1>
+    <h2>Проверка символов</h2>
     <ul>
         <li>Русские Кавычки: &laquo; &raquo;</li>
     </ul>
 
+    <h2>Цвета символов</h2>
+    Lorem <span style="color:#f7f">ipsum</span> <span style="background-color: #7f7;">dolor</span>, sit amet <span style="color:#f45; background-color: #0ff;">consectetur</span> adipisicing elit. Pariatur, et! Eum quos beatae vel numquam minus quibusdam commodi quod illum rem earum explicabo dolore, ullam, consequatur nostrum sit nihil alias.
+
     <h1>Проверка графических тегов</h1>
     <ul>
         <li> ProgressBar: <progress value="60" max="200"></progress> </li>
+        <li> meter: <meter id="disk_c" value="2" min="0" max="10"></meter> </li>
     </ul>
 
 </body>
