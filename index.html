@@ -39,11 +39,23 @@
         <li><a href="somepage.html">Ссылка</a></li>
         <li><blink>Мигающий текст</blink></li>
     </ul>
+    <br>
+    <span id="colorWord">Цветное слово</span>
+    <script>
+            const word = document.getElementById("colorWord");
+            const colors = ["red", "green", "blue"];
+            let index = 0;
+
+            setInterval(() => {
+                    word.style.color = colors[index];
+                    index = (index + 1) % colors.length;
+            }, 1000);
+    </script>
+
     <div class="box" id="one">
         I am a block of text<br>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis explicabo rem ipsam nihil eaque perspiciatis, non error, veritatis sint cumque molestiae totam maiores reprehenderit sapiente consequatur asperiores minima iure!
     </div>
-
     
     <h2>Проверка символов</h2>
     <ul>
